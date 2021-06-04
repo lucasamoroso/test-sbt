@@ -1,0 +1,41 @@
+{
+  "id": "manual-review",
+  "owner": "fraud-marketplace",
+  "inputs": [
+    {
+      "type": "bigqueue",
+      "topic_id": "39609696382d447ba8417d5702c27b09-remedies-manual_review_cases",
+      "decoration": {
+        "filter_fields": []
+      }
+    },
+    {
+      "type": "bigqueue",
+      "topic_id": "manual_review_actions.remedies-subscribers",
+      "decoration": {
+        "decorations":[],
+        "filter_fields": [
+        ]
+      }
+    },
+    {
+      "type": "ondemand",
+      "flavor": "by_case_id",
+      "decoration": {
+        "decorations": [
+        ],
+        "filter_fields": [
+        ]
+      }
+    }
+  ],
+  "outputs": [
+  ],
+  "decoration": {
+    "filter_fields": [],
+    "decorations": [],
+    "computed_fields": [],
+    "remove_fields": [
+    ]
+  }
+}
